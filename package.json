@@ -1,0 +1,35 @@
+{
+  "name": "simpleserver",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "node dist/index.js",
+    "dev": "nodemon --inspect dist/index.js",
+    "jest": "jest -i",
+    "lint": "eslint --fix .",
+    "format": "prettier --write ."
+  },
+  "author": "Anton Zeltser",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^18.0.1",
+    "eslint-plugin-prettier": "^5.5.6",
+    "express": "^4.22.3",
+    "http-errors": "~1.6.3",
+    "morgan": "^1.12.1",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^26.5.1",
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  }
+}
