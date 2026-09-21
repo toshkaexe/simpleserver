@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "start": "node dist/index.js",
+    "start": "lsof -ti:5000 | xargs kill -9 2>/dev/null || true; node dist/index.js",
     "dev": "nodemon --inspect dist/index.js",
     "jest": "jest -i",
     "lint": "eslint --fix .",
